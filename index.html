@@ -1,84 +1,91 @@
-
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>Bash Histories</title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="./css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <link href="./css/starter-template.css" rel="stylesheet">
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Bash-histories by maithuvenkatesh</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/respond.js"></script>
     <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" href="stylesheets/ie.css">
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
   </head>
-
   <body>
+      <div id="header">
+        <nav>
+          <li class="fork"><a href="https://github.com/maithuvenkatesh/bash-histories">View On GitHub</a></li>
+          <li class="downloads"><a href="https://github.com/maithuvenkatesh/bash-histories/zipball/master">ZIP</a></li>
+          <li class="downloads"><a href="https://github.com/maithuvenkatesh/bash-histories/tarball/master">TAR</a></li>
+          <li class="title">DOWNLOADS</li>
+        </nav>
+      </div><!-- end header -->
 
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-      <div class="container">
-        <div class="navbar-header">
-          <a class="navbar-brand" href="#">BASH HISTORIES</a>
+    <div class="wrapper">
+
+      <section>
+        <div id="title">
+          <h1>Bash-histories</h1>
+          <p></p>
+          <hr>
+          <span class="credits left">Project maintained by <a href="https://github.com/maithuvenkatesh">maithuvenkatesh</a></span>
+          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></span>
         </div>
-        <div id="navbar" class="collapse navbar-collapse">
-        </div><!--/.nav-collapse -->
-      </div>
-    </nav>
 
-    <div class="container">
+        <h2>
+<a id="help-us-with-our-project-by-providing-us-with-your-bash-history" class="anchor" href="#help-us-with-our-project-by-providing-us-with-your-bash-history" aria-hidden="true"><span class="octicon octicon-link"></span></a>Help us with our project by providing us with your bash history</h2>
 
-      <div>
-        <h1 class="starter-template">Getting your .bash_history file</h1>
-        <ol>
-            <li>Open a command line terminal window.</li>
-            <li>Run this command: cp ~/.bash_history ~/Desktop. This copies your .bash_history file.</li>
-            <li>Finally, use <a href="https://script.google.com/macros/s/AKfycbxxmk-CH7N0w98jk6C6BAhi_kOagu34Gmg9uyjZV1is9auoijJ4/exec">this form</a> to upload your script*.</li>
-            <li>Run: rm ~/Desktop/.bash_history</li>
-        </ol>
+<p>If you cannot view hidden files on your machine then please follow the instructions below to upload your .bash_history file. Otherwise you can directly use <a href="https://script.google.com/macros/s/AKfycbxxmk-CH7N0w98jk6C6BAhi_kOagu34Gmg9uyjZV1is9auoijJ4/exec">this uploader</a></p>
 
-        <p>Please note: this form was created using Google App Script so you may need to give it permission.</p>
-      </div>
+<ul>
+<li>Open a command line terminal window.</li>
+<li>Run this command to copy your .bash_history file to your Desktop and make it visible.: </li>
+</ul>
 
-      <div class="container">
-      <!-- Example row of columns -->
-      <div class="row">
-      <div class="col-md-4">
-          <h2>Alternate</h2>
-          <p>If you'd prefer, you can also email us your .bash_history files. Just follow the instruction in the Contact Us section. </p>
-       </div>        
-        <div class="col-md-4">
-          <h2>About The Project</h2>
-          <p>This data gathering is part of a software engineering research project being carried out with Dr Earl Barr (UCL).</p>
-        </div>
-        <div class="col-md-4">
-          <h2>Contact Us</h2>
-          <p>For more information or questions please use the following contact details. Please use "BASH" in the subject header to ensure that your email </p>
-          <p>Dr Earl Barr: e.barr@ucl.ac.uk</p>
-          <p>Maithreyi Venkatesh: maithu@hotmail.co.uk</p>
-       </div>
-      </div>
+<pre><code>$ cp ~/.bash_history ~/Desktop/bash_history
+</code></pre>
 
+<ul>
+<li>Use <a href="https://script.google.com/macros/s/AKfycbxxmk-CH7N0w98jk6C6BAhi_kOagu34Gmg9uyjZV1is9auoijJ4/exec">this uploader</a> to upload your file*.</li>
+<li>Run this command to remove it from your Desktop:</li>
+</ul>
 
-    </div><!-- /.container -->
+<pre><code>$ rm ~/Desktop/.bash_history
+</code></pre>
 
+<p>*Please note: this uploader was created using Google App Script hence will require your permission.</p>
 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="./js/bootstrap.min.js"></script>
+<h2>
+<a id="alternative-methods" class="anchor" href="#alternative-methods" aria-hidden="true"><span class="octicon octicon-link"></span></a>Alternative Methods</h2>
 
+<p>If you prefer not to use the automatic uploader, you can also email us your .bash_history file. Just follow the instruction in the "Contact Us" section, below.</p>
+
+<h2>
+<a id="why-do-we-want-these-files" class="anchor" href="#why-do-we-want-these-files" aria-hidden="true"><span class="octicon octicon-link"></span></a>Why do we want these files?</h2>
+
+<p>This data gathering is part of a software engineering research project that I am working on with Earl. We would like to carry out some analysis on your bash_histories to evaluate users' usage of the command line. </p>
+
+<h2>
+<a id="contact-us" class="anchor" href="#contact-us" aria-hidden="true"><span class="octicon octicon-link"></span></a>Contact Us</h2>
+
+<p>For more information or questions please use the following contact details. Please use "BASH" in the subject header to ensure that your email gets through to us.</p>
+
+<ul>
+<li>Dr Earl Barr: <a href="mailto:e.barr@ucl.ac.uk">e.barr@ucl.ac.uk</a>
+</li>
+<li>Maithreyi Venkatesh: <a href="mailto:maithu@hotmail.co.uk">maithu@hotmail.co.uk</a>
+</li>
+</ul>
+      </section>
+
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    
   </body>
 </html>
-
-
