@@ -32,8 +32,10 @@ def get_bash_histories():
           else:
             c = Command(l)
             bh.add_commands(c)
-        bash_histories.append(bh)
+        bash_histories.append(bh
+
   return bash_histories
+
 
 def main():
   bash_histories = get_bash_histories()
