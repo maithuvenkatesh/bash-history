@@ -1,19 +1,20 @@
-def get_ngrams(cmds_list, n):
-  return zip(*[cmds_list[i:] for i in range(n)])
-
-def plot_ngram_cmds(bh):
-  cmd_ngrams = get_ngrams(bh.cmds)
-  ngram_counter = Counter(cmd_ngrams)
-  for s in ngram_counter:
-    ngram_counter[c] /= float(len(bh.cmds))
-
-  plt.bar(range(0, len(ngram_counter.keys())), ngram_counter.values())
-  plt.xlabel('Distinct Command Sequences')
-  plt.ylabel('Normalised Counts of Distinct Command Sequences')
-  plt.show()
+import data_reader
+from collections import Counter
 
 def main():
-  bash_histories = data_reader.get_bash_histories()
+  histories = data_reader.get_bash_histories()
+  NGRAM = 4
+  for h in histories:
+    ngrams = []  
+    ngrams.append(zip(*(h.cmds[i:] for i in range(NGRAM))))
+    counter = Counter(ngrams[0])
+    sorted_ngrams = sorted(counter, key=counter.get, reverse=True)
+    
+    print '============BASH HISTORY ' + h.name + ' ==================='
+    for n in sorted_ngrams:
+      print 'NGRAM: ' + str(n) + ' Count: ' + str(counter[n])
+    print '============BASH HISTORY END==================='
+    print '\n'
 
 if __name__ == '__main__':
   main()
